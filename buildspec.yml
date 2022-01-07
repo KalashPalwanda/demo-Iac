@@ -6,6 +6,7 @@ env:
     DOCKER_REPO_USER: "kalashpalwanda"
     DOCKER_REPO_NAME: "demo"
     ECR_REPOSITORY_URI: "890123456789.dkr.ecr.us-east-1.amazonaws.com/petclinic"
+    DOCKER_REPOSITORY_URL: "https://hub.docker.com/repository/docker/kalashpalwanda/demo"
   parameter-store:
     LOGIN_PASSWORD: /CodeBuild/Life@9876
     LOGIN_USER: /CodeBuild/kalashpalwanda
