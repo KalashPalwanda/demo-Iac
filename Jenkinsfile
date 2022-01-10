@@ -51,7 +51,7 @@ pipeline {
         stage('K8S Deploy') {
             steps {
                 kubernetesDeploy(
-                    configs: 'demo-Iac/kubernetes/petclinic.yaml',
+                    configs: 'kubernetes/petclinic.yaml',
                     kubeconfigId: 'K8s',
                     enableConfigSubstitution: true
                     ) 
