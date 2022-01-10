@@ -48,13 +48,14 @@ pipeline {
                 }
             }
         }
-        stage ('K8S Deploy') {
-       
+        stage('K8S Deploy') {
+            steps {
                 kubernetesDeploy(
                     configs: 'demo-Iac/kubernetes/petclinic.yaml',
                     kubeconfigId: 'K8s',
                     enableConfigSubstitution: true
-                    )               
+                    ) 
+            }
         }
         stage('Remove local images') {
             steps {
